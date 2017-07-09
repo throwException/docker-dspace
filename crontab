@@ -1,0 +1,5 @@
+*/5 * * * * root /opt/dspace/bin/dspace filter-media >> /var/log/syslog.log 2>&1
+*/3 * * * * root /opt/dspace/bin/dspace index-discovery >> /var/log/syslog.log 2>&1
+31 * * * * root /opt/dspace/bin/dspace generate-sitemaps >> /var/log/syslog.log 2>&1
+# An empty line is required at the end of this file for a valid cron file.
+
