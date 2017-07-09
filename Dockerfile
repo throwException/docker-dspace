@@ -31,6 +31,8 @@ COPY crontab /etc/cron.d/dspace-cron
 RUN chmod 0644 /etc/cron.d/dspace-cron
 COPY local.cfg /opt/dspace/dspace/config/local.cfg
 COPY xmlui.xconf /opt/dspace/dspace/config/xmlui.xconf
+COPY news-xmlui.xml /opt/dspace/dspace/config/news-xmlui.xml
+COPY item-submission.xml /opt/dspace/dspace/config/item-submission.xml
 COPY template.sh /template.sh
 COPY mvn.sh /mvn.sh
 RUN chmod a+x /mvn.sh
