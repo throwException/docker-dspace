@@ -43,9 +43,9 @@
          <dc-element>contributor</dc-element>
          <dc-qualifier>author</dc-qualifier>
          <repeatable>true</repeatable>
-         <label>Richter</label>
+         <label>Autor</label>
          <input-type>name</input-type>
-         <hint>An dem Urteil, Beschluss oder Dokument beteiligte Richter.</hint>
+         <hint>Autor des Dokuments.</hint>
          <required></required>
        </field>
 
@@ -65,9 +65,9 @@
          <dc-element>date</dc-element>
          <dc-qualifier>issued</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Beschlussdatum</label>
+         <label>Datum</label>
          <input-type>date</input-type>
-         <hint>Datum des Urteils, Beschlusses oder anderen Dokuments.</hint>
+         <hint>Datum des Dokuments.</hint>
          <required>Mindestens das Jahr muss angegeben werden.</required>
        </field>
 
@@ -76,9 +76,9 @@
          <dc-element>publisher</dc-element>
          <dc-qualifier></dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Gericht</label>
+         <label>Behörde</label>
          <input-type>onebox</input-type>
-         <hint>Gericht, welches das Urteil oder den Beschluss gefällt oder das Dokument publiziert hat.</hint>
+         <hint>Behörde, von der das Dokument stammt.</hint>
          <required></required>
        </field>
 
@@ -162,9 +162,9 @@
          <dc-element>contributor</dc-element>
          <dc-qualifier>author</dc-qualifier>
          <repeatable>true</repeatable>
-         <label>Besetzung</label>
+         <label>Autoren</label>
          <input-type>name</input-type>
-         <hint>An dem Urteil, Beschluss oder Dokument beteiligte Richter.</hint>
+         <hint>Autoren des Dokuments.</hint>
          <required></required>
        </field>
       </page>
@@ -188,7 +188,7 @@
  <form-value-pairs>
    <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
      <pair>
-       <displayed-value>Aktenzeichen</displayed-value>
+       <displayed-value>Geschäftsnummer/Aktenzeichen</displayed-value>
        <stored-value>govdoc</stored-value>
      </pair>
      <pair>
@@ -199,12 +199,20 @@
 
    <value-pairs value-pairs-name="common_types" dc-term="type">
      <pair>
-       <displayed-value>Urteil</displayed-value>
-       <stored-value>judgement</stored-value>
+       <displayed-value>Protokoll</displayed-value>
+       <stored-value>minutes</stored-value>
      </pair>
      <pair>
        <displayed-value>Beschluss</displayed-value>
        <stored-value>decision</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Urteil</displayed-value>
+       <stored-value>judgement</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Verfügung</displayed-value>
+       <stored-value>order</stored-value>
      </pair>
      <pair>
        <displayed-value>Anderes</displayed-value>

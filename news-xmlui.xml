@@ -2,8 +2,8 @@
 <document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
 <body>
 <div id="file.news.div.news" n="news" rend="primary">
-<head>Urteilssammlung der Schiedsgerichte</head>
-<p>Hier sammeln das Bundessschiedsgericht und die Landesschiedsgerichte der Piratenpartei ihre Urteile und Beschüsse.</p>
+<head>Von Behörden befreite Dokumente</head>
+<p>Hier sammelt die Piratenpartei Zentralschweiz von Behörden nach dem Öffentlichkeitsgesetz erlangte Dokumente.</p>
 </div>
 </body>
 <options/>
