@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Stefan Thoeni <stefan.thoeni@piratenpartei.de>
+MAINTAINER Stefan Thoeni <stefan@savvy.ch>
 
 RUN apt-get update
 RUN apt-get upgrade -y
@@ -7,7 +7,7 @@ RUN apt-get install -y default-jdk curl wget less cron git
 
 RUN groupadd tomcat
 RUN useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
-RUN cd /tmp && curl -O http://apache.mirrors.ionfish.org/tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz
+RUN cd /tmp && curl -O http://www.pirbot.com/mirrors/apache/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz
 RUN mkdir /opt/tomcat && tar xzvf /tmp/apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
 RUN cd /opt/tomcat && chgrp -R tomcat /opt/tomcat && chmod -R g+r conf && chmod g+x conf && chown -R tomcat webapps/ work/ temp/ logs/
 
